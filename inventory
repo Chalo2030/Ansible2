@@ -2,8 +2,8 @@
 192.168.133.145 ansible_user=vagrant
 
 [CentOS_db]
-192.168.133.149 ansible_user=vagrant
+192.168.133.152 ansible_user=vagrant
 
 [ubuntu]
-192.168.133.150 ansible_user=vagrant
+192.168.133.151 ansible_user=vagrant
 
