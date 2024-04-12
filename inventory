@@ -1,9 +1,9 @@
 [kali_web]
-192.168.133.145 ansible_user=vagrant
+192.168.133.145 ansible_user=vagrant apache_package=apache2 php_package=libapache2-mod-php
 
 [CentOS]
-192.168.133.152 ansible_user=vagrant ansible_python_interpreter=/usr/bin/python3
+192.168.133.152 ansible_user=vagrant apache_package=httpd php_package=php
 
 [ubuntu]
-192.168.133.151 ansible_user=vagrant
+192.168.133.151 ansible_user=vagrant apache_package=apache2 php_package=libapache2-mod-php5
 
