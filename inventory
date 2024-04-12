@@ -1,8 +1,8 @@
 [kali_web]
 192.168.133.145 ansible_user=vagrant
 
-[CentOS_db]
-192.168.133.152 ansible_user=vagrant
+[CentOS]
+192.168.133.152 ansible_user=vagrant ansible_python_interpreter=/usr/bin/python3
 
 [ubuntu]
 192.168.133.151 ansible_user=vagrant
