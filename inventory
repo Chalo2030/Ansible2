@@ -1,9 +1,21 @@
-[kali_web]
-192.168.133.145 ansible_user=vagrant apache_package=apache2 php_package=libapache2-mod-php
+#[db_servers_kali]
+#192.168.133.145 ansible_user=vagrant
 
-[CentOS]
-192.168.133.152 ansible_user=vagrant apache_package=httpd php_package=php
+[db_servers]
+192.168.133.152 ansible_user=vagrant
+192.168.133.145 ansible_user=vagrant
 
-[ubuntu]
-192.168.133.151 ansible_user=vagrant apache_package=apache2 php_package=libapache2-mod-php5
 
+[web_servers_ubuntu]
+192.168.133.151 ansible_user=vagrant
+
+[file_servers]
+192.168.133.154 ansible_user=vagrant
+#[kali_web]
+#192.168.133.145 ansible_user=vagrant apache_package=apache2 php_package=libapache2-mod-php
+
+#[CentOS]
+#192.168.133.152 ansible_user=vagrant apache_package=httpd php_package=php
+
+#[ubuntu]
+#192.168.133.151 ansible_user=vagrant apache_package=apache2 php_package=libapache2-mod-php5

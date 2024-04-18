@@ -5,24 +5,30 @@
   become: true
  
   tasks:
-    #- name: update repository index
-    #apt:
-    #update_cache: yes
-    #when: ansible_distribution in ["Debian", "Ubuntu"]
+  - name: update repository index
+    apt:
+     name:
+       - apache2
+       - linapache2-mod-php
+     state: latest
+     update_cache: yes
+     when: ansible_distribution in ["Debian", "Ubuntu"]
     # when: ansible_distribution == "Ubuntu"
     #if we have multiple distributions we can use the line below
     #    when: ansible_distribution in ["Debian","Ubuntu"]
       
     #We might also need to specify the distribution and its version
     # when: ansible_distribution == "Ubuntu"and ansible_distribution_version == "8.2"
-
-  - name: install apache2 package, support for php and update repository
-    package:
-      name: 
-        - "{{ apache_package }}"
-        - "{{ php_package }}"
-      state: latest
-      update_cache: yes
+    ################################################################
+    #defining variables to install in virtual machines
+    #  - name: install apache2 package, support for php and update repository
+    #package:
+    # name: 
+    #   - "{{ apache_package }}"
+    #   - "{{ php_package }}"
+    # state: latest
+    # update_cache: yes
+        #############################################################
         #    when: ansible_distribution in ["Debian", "Ubuntu"]
     # when: ansible_distribution == "Ubuntu"
     #    when: ansible_distribution in ["Debian","Ubuntu"]
@@ -48,14 +54,14 @@
      #update_cache: yes
      #when: ansible_distribution == "CentOS" or ansible_distribution == "RedHat"
 
-        #  - name: install apache2 and php package for CentOS
-    #    yum:
-      #      name: 
-        #        - httpd
-          #        - php
-          #      state: latest
-        #      update_cache: yes
-        #    when: ansible_distribution == "CentOS" or ansible_distribution == "RedHat"
+  - name: install apache2 and php package for CentOS
+    yum:
+      name: 
+        - httpd
+        - php
+      state: latest
+      update_cache: yes
+      when: ansible_distribution == "CentOS" or ansible_distribution == "RedHat"
 
       #  - name: add php support for apache
       # yum:

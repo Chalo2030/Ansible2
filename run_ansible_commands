@@ -1,0 +1,160 @@
+1278  ssh-copy-id -i ~/.ssh/ansible.pub 192.168.133.143
+ 1304  ansible
+ 1379  ssh-keygen -t ed25519 -C "ansible"
+ 1382  ssh-keygen -t ed25519 -C "ansible"
+ 1384  cat ansible
+ 1385  cat ansible.p
+ 1386  cat ansible.pub 
+ 1387  ssh-copy-id -i ansible.pub 192.168.133.138 
+ 1388  ssh-copy-id -i ansible.pub vagrant@192.168.133.138 
+ 1389  ssh-copy-id -i ansible.pub vagrant@192.168.133.133 
+ 1390  ssh-copy-id -i ansible.pub vagrant@192.168.133.132
+ 1391  ssh-copy-id -i ansible.pub vagrant@192.168.133.137
+ 1392  ssh-copy-id -i ansible.pub vagrant@192.168.133.129
+ 1393  ssh-copy-id -i ansible.pub 192.168.133.129
+ 1395  ssh-copy-id -i ansible.pub 192.168.133.137
+ 1428  ssh-copy-id -i ~/.ssh/ansible.pub 192.168.133.149
+ 1429  ssh-copy-id -i ~/.ssh/ansible.pub vagrant@192.168.133.149
+ 1437  ssh-copy-id -i ansible.pub 192.168.133.145
+ 1439  cat ansible
+ 1440  cat ansible.pub 
+ 1441  ssh-copy-id -i ansible.pub 192.168.133.145
+ 1447  ssh-copy-id -i ~/.ssh/ansible.pub 192.168.133.145
+ 1450  ssh-copy-id -i ~/.ssh/ansible.pub 192.168.133.145
+ 1454  ssh-copy-id -i ~/.ssh/ansible.pub 192.168.133.145
+ 1651  cd ansible-project/
+ 1652  mkdir ansible-project; cd ansible-project/
+ 1658  ansible all -m ping -i hosts
+ 1661  ansible all -m ping -i hosts
+ 1666  cd ansible-project/
+ 1668  ansible all -m ping -i hosts
+ 1671  ansible-playboook -i playbook.yml
+ 1672  ansible-playbook -i playbook.yml
+ 1673  ansible-playbook -i hosts playbook.yml
+ 1674  ansible-playbook -C -i hosts playbook.yml
+ 1675  ansible-playbook -C playbook.yml
+ 1676  ansible-playbook --check playbook.yml
+ 1677  ansible-playbook --check -i hosts playbook.yml
+ 1678  ansible-playbook --syntax-check -i hosts playbook.yml
+ 1679  ansible-playbook --list-tasks -i hosts playbook.yml
+ 1680  ansible-playbook list-host -i hosts playbook.yml
+ 1681  ansible-playbook --list-host -i hosts playbook.yml
+ 1682  ansible-playbook --list-hosts -i hosts playbook.yml
+ 1683  ansible-playbook -h
+ 1703  ls .ssh/ansible
+ 1704  cats .ssh/ansible.pub 
+ 1705  cat .ssh/ansible.pub 
+ 1706  ssh -i .ssh/ansible 192.168.133.150
+ 1707  ssh -i .ssh/ansible vagrant@192.168.133.150
+ 1708  cat .ssh/ansible.pub 
+ 1712  cd ansible2
+ 1744  ansible all --key-file ~/.ssh/ansible -i inventory -m ping
+ 1745  sudo vim ansible.cfg
+ 1746  ansible all -m ping
+ 1748  ansible all --list-hosts
+ 1749  ansible all -m gather_facts
+ 1750  ansible all -m gather_facts --limit 192.168.133.150
+ 1752  git add ansible.cfg 
+ 1755  git commit -m "first version of ansible.cfg"
+ 1757  ansible all -m apt -a update_cache=true
+ 1758  ansible all -m apt -a update_cache=true --become --ask-become-pass
+ 1759  ansible all -m apt -a name=vim-nox --become --ask-become-pass
+ 1760  ansible all -m apt -a name=tmux --become --ask-become-pass
+ 1762  ansible all -m apt -a name=snapd --become --ask-become-pass
+ 1763  ansible all -m yum -a name=snapd --become --ask-become-pass
+ 1764  ansible all -m yum -a name=epel-release --become --ask-become-pass
+ 1765  ansible all -m yum -a name=snapd --become --ask-become-pass
+ 1766  ansible all -m apt -a "name=snapd state=latest" --become --ask-become-pass
+ 1767  ansible all -m yum -a "name=snapd state=latest" --become --ask-become-pass
+ 1768  ansible all -m yum -a "upgrade=dist" --become --ask-become-pass
+ 1769  ansible all -m apt -a "upgrade=dist" --become --ask-become-pass
+ 1778  ls ansible-project/
+ 1786  cat ~/.ssh/ansible.pub 
+ 1836  history | grep ansible
+ 1839  ansible all -m apt -a "upgrade=dist" --become --ask-become-pass
+ 1841  cat ~/.ssh/ansible.pub 
+ 1842  ansible all -m apt -a "upgrade=dist" --become --ask-become-pass
+ 1843  ansible all -m yum -a "upgrade=dist" --become --ask-become-pass
+ 1844  ansible all -m yum -a "name='*' state=latest" --become --ask-become-pass
+ 1851  ansible-playbook --ask-become-pass install_apache.yml 
+ 1853  ansible-playbook --ask-become-pass install_apache.yml 
+ 1855  ansible-playbook --ask-become-pass install_apache.yml 
+ 1857  ansible-playbook --ask-become-pass install_apache.yml 
+ 1860  ansible-playbook --ask-become-pass remove_apache.yml 
+ 1861  ansible-playbook --ask-become-pass install_apache.yml 
+ 1868  ansible-playbook --ask-become-pass install_apache.yml 
+ 1872  ansible-playbook --ask-become-pass install_apache.yml 
+ 1874  ansible-playbook --ask-become-pass install_apache.yml 
+ 1876  ansible-playbook --ask-become-pass install_apache.yml 
+ 1878  ansible-playbook --ask-become-pass install_apache.yml 
+ 1880  ansible-playbook --ask-become-pass install_apache.yml 
+ 1882  ansible-playbook --ask-become-pass install_apache.yml 
+ 1884  ansible-playbook --ask-become-pass install_apache.yml 
+ 1886  ansible-playbook --ask-become-pass install_apache.yml 
+ 1888  ansible-playbook --ask-become-pass install_apache.yml 
+ 1890  ansible-playbook --ask-become-pass install_apache.yml 
+ 1892  ansible-playbook --ask-become-pass install_apache.yml 
+ 1894  ansible-playbook --ask-become-pass install_apache.yml 
+ 1898  ansible-playbook --ask-become-pass install_apache.yml 
+ 1900  ansible --version
+ 1902  ansible-config dump --only-changed -t all
+ 1903  ansible-playbook --ask-become-pass install_apache.yml 
+ 1906  ansible-playbook --ask-become-pass install_apache.yml 
+ 1908  ansible-playbook --ask-become-pass install_apache.yml 
+ 1910  ansible-playbook --ask-become-pass install_apache.yml 
+ 1912  ansible-playbook --ask-become-pass install_apache.yml 
+ 1916  ansible-playbook --ask-become-pass install_apache.yml 
+ 1919  ansible-playbook --ask-become-pass install_apache.yml 
+ 1921  ansible-playbook --ask-become-pass install_apache.yml 
+ 1923  ansible-playbook --ask-become-pass install_apache.yml 
+ 1925  ansible-playbook --ask-become-pass install_apache.yml 
+ 1927  ansible-playbook --ask-become-pass install_apache.yml 
+ 1930  ansible-playbook --ask-become-pass install_apache.yml 
+ 1933  ansible-playbook --ask-become-pass install_apache.yml 
+ 1935  ansible-playbook --ask-become-pass install_apache.yml 
+ 1937  ansible-playbook --ask-become-pass install_apache.yml 
+ 1939  ansible-playbook --ask-become-pass install_apache.yml 
+ 1945  ansible-playbook --ask-become-pass install_apache.yml 
+ 1947  ansible-playbook --ask-become-pass install_apache.yml 
+ 1950  ansible-playbook --ask-become-pass install_apache.yml 
+ 1952  ansible-playbook --ask-become-pass install_apache.yml 
+ 1954  ansible all -m gather_facts --limit 192.168.133.152
+ 1955  ansible all -m gather_facts --limit 192.168.133.152 | grep ansible_distribution
+ 1956  ansible all -m gather_facts --limit 192.168.133.152 | grep ansible_python
+ 1957  ansible all -m gather_facts --limit 192.168.133.152 | grep ansible_python_interpreter
+ 1960  ansible-playbook --ask-become-pass install_apache.yml 
+ 1963  ansible-playbook --ask-become-pass install_apache.yml 
+ 1977  ansible-playbook --ask-become-pass install_apache.yml 
+ 1979  ansible-playbook --ask-become-pass install_apache.yml 
+ 1981  ansible all -m gather_facts --limit 192.168.133.151
+ 1982  ansible all -m gather_facts --limit 192.168.133.151 | grep version
+ 1983  ansible all -m gather_facts --limit 192.168.133.145 | grep version
+ 1985  ansible-playbook --ask-become-pass install_apache.yml 
+ 1987  ansible-playbook --ask-become-pass install_apache.yml 
+ 1995  ansible-playbook --ask-become-pass install_apache.yml 
+ 2015  ansible-playbook --ask-become-pass site.yml
+ 2017  ansible-playbook --ask-become-pass site.yml
+ 2019  ansible-playbook --ask-become-pass site.yml
+ 2021  ansible-playbook --ask-become-pass site.yml
+ 2023  ansible-playbook --ask-become-pass site.yml
+ 2026  ansible-playbook --ask-become-pass site.yml
+ 2028  ansible-playbook --ask-become-pass site.yml
+ 2030  ansible-playbook --ask-become-pass site.yml
+ 2032  ansible-playbook --ask-become-pass site.yml
+ 2034  ansible all -m gather_facts --limit 192.168.133.151 | grep ansible_distribution
+ 2035  ansible all -m gather_facts --limit 192.168.133.145 | grep ansible_distribution
+ 2037  ansible all -m gather_facts --limit 192.168.133.145 | grep ansible_distribution
+ 2038  ansible-playbook --ask-become-pass site.yml
+ 2040  ansible-playbook --ask-become-pass site.yml
+ 2042  ansible-playbook --ask-become-pass site.yml
+ 2044  ansible-playbook --ask-become-pass site.yml
+ 2046  ansible-playbook --ask-become-pass site.yml
+ 2051  ansible-playbook --ask-become-pass site.yml
+ 2053  ansible-playbook --ask-become-pass site.yml
+ 2054  ansible-playbook --list-tags site.yml
+ 2055  ansible-playbook --tags centos --ask-become site.yml
+ 2056  ansible-playbook --tags db --ask-become site.yml
+ 2057  ansible-playbook --tags apache --ask-become site.yml
+ 2058  touch run_ansible_commands
+ 2059  ansible-playbook --tags "apache,db" --ask-become site.yml
+
